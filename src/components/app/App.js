@@ -14,8 +14,9 @@ const store = configureStore();
 
 const useStyles = makeStyles(theme => ({
   app: {
+    width: '100%',
     height: '100%',
-    overflow: 'hidden'
+    display: 'flex'
   }
 }));
 
@@ -26,7 +27,7 @@ export default function App() {
     <Provider store={store}>
       <ThemeProvider theme={theme}>
         <ConnectedRouter history={history}>
-          <Box xs={false} className={classes.app} bgcolor="primary.dark">
+          <Box className={classes.app} bgcolor="primary.dark">
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/editor" component={Editor} />
