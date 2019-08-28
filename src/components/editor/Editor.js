@@ -44,7 +44,7 @@ export default function Editor(props) {
   };
   const { history } = props;
   Object.keys(modeRoutes).forEach(key => {
-    if (modeRoutes[key] == history.location.pathname) {
+    if (modeRoutes[key] === history.location.pathname) {
       mode = key;
     }
   });
