@@ -22,7 +22,7 @@ export default function Home() {
       className={classes.home}
     >
       <Grid item>
-        <Grid container justify="center" spacing="5">
+        <Grid container justify="center" spacing={5}>
           <Grid item>
             <Button
               variant="contained"
